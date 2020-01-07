@@ -5,33 +5,199 @@
   <title>
     <david>
   </title>
-  <style>
-    title {
-      display: none;
+<style>
+
+body{
+    width:200px;
+    margin: auto;    
+    font-family: Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+/*    font-weight: 700;*/
+}
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+div.slide-right p {
+  animation: 6s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -10000%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    
+
+div.slide-left p {
+  animation: 8s slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 14000%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    
+    
+/*div.slide-up {
+  height:200px;
+  overflow:hidden;
+}*/
+div.slide-up p {
+  animation: 11s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 2000%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+    width:100%;
+    margin: auto;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
     }
-    p {
-      font-family: "FreeMono", monospace;
+    to { 
+        width: 100% 
     }
-    div {
-      width: 200px;
-      margin: auto;
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
     }
-  </style>
-</head>
+    50% { 
+        border-color: orange; 
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
-  <div>
-    <p id="greeting">hello world!<br>i'm david</p>
-    <img src="https://pbs.twimg.com/profile_images/1060938421101834241/y5l2j2_h_400x400.jpg" target="_blank" alt="image" height="180" width="180"/>
+<br>
+<div class="typewriter">
+    <div class="typewriter-text">hi, i'm david :) </div>
+</div>
+
+    
+<img src="https://pbs.twimg.com/profile_images/1060938421101834241/y5l2j2_h_400x400.jpg" target="_blank" alt="image" height="180" width="180"/>    
+    
+    
+<div class="slide-right">
     <p id="work">during the day, i work in m&a and practice computer programming</p>
-    <p id-"fun">
+</div>    
+
+    
+<div class="slide-left">
+    <p id="fun">
       in my free time, <a href="https://www.instagram.com/davideatslikegoliath/?hl=en" target="_blank">i like to try new restaurants</a>, <a href="https://choppingblock.fisherofbros.com/" target="_blank">perfect my own recipes</a>, play guitar, and watch plenty of movies
-    </p>
+    </p>    
+</div>    
+
+<div class="slide-up">
     <p id="connect">
       connect with me on:<br>
       <a href="https://www.linkedin.com/in/davidbvanslyke/" target="_blank">linkedin</a><br>
       <a href="https://www.instagram.com/davidbvanslyke/?hl=en" target="_blank">instagram</a><br>
       <a href="mailto:dbvanslyke@gmail.com" target="_blank">email</a>
     </p>
-  </div>
+</div>    
+    
+    
+
+
 </body>
 </html>
