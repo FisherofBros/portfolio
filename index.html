@@ -3,10 +3,12 @@
 <head>
   <link rel="icon" href="https://img.icons8.com/pastel-glyph/2x/fishing-hook.png"><!--this is the favicon-->
   <title>
-    <david>
+    <david><!--this is the website title for the browser tab-->
   </title>
-<style>
-
+	  
+<style><!--this begins the CSS-->
+	
+<!--here i define the overall page width-->
 body{
     width:200px;
     margin: auto;    
@@ -16,86 +18,58 @@ body{
 /*    font-weight: 700;*/
 }
  
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
+	
+<!--here i define the righward movement-->
 div.slide-right p {
   animation: 6s slide-right;
 }
-
 @keyframes slide-right {
   from {
     margin-left: -10000%;
     width: 100%; 
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
     
-
+<!--here i define the leftward movement-->
 div.slide-left p {
   animation: 8s slide-left;
 }
-
 @keyframes slide-left {
   from {
     margin-left: 14000%;
     width: 100%; 
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-    
-    
-/*div.slide-up {
-  height:200px;
-  overflow:hidden;
-}*/
+	
+<!--here i define the upward movement-->
 div.slide-up p {
   animation: 11s slide-up;
   margin-top:0%;
 }
-
 @keyframes slide-up {
   from {
     margin-top: 2000%;
     height: 300%; 
   }
-
   to {
     margin-top: 0%;
     height: 100%;
   }
 }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ <!--this section defines the typwriting function at the top--> 
 .typewriter {
     font-family: Courier, monospace;
 	display: inline-block;
 }
-
 .typewriter-text {
     display: inline-block;
   	overflow: hidden;
@@ -109,7 +83,6 @@ div.slide-up p {
     width:100%;
     margin: auto;
 }
-
 @keyframes typing {
     from { 
         width: 0% 
@@ -118,7 +91,6 @@ div.slide-up p {
         width: 100% 
     }
 }
-
 @keyframes blink {
     from, to { 
         border-color: transparent 
@@ -131,62 +103,33 @@ div.slide-up p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--here begins the body of the website-->
+	  
 <body>
-<br>
+
+<br><!--space between the top of the browser and the text-->
+	
+<!--this calls the typewriter css to the introduction-->
 <div class="typewriter">
     <div class="typewriter-text">hi, i'm david :) </div>
 </div>
 
-    
+<!--here is the image-->
 <img src="https://pbs.twimg.com/profile_images/1060938421101834241/y5l2j2_h_400x400.jpg" target="_blank" alt="image" height="180" width="180"/>    
     
-    
+<!--here is the work section which calls the slide right function-->
 <div class="slide-right">
     <p id="work">during the day, i work in m&a and practice computer programming</p>
 </div>    
 
-    
+<!--here is the fun section which calls the slide left function-->
 <div class="slide-left">
     <p id="fun">
       in my free time, <a href="https://www.instagram.com/davideatslikegoliath/?hl=en" target="_blank">i like to try new restaurants</a>, <a href="https://choppingblock.fisherofbros.com/" target="_blank">perfect my own recipes</a>, play guitar, and watch plenty of movies
     </p>    
 </div>    
 
+<!--here is the connect section which calls the slide up function-->
 <div class="slide-up">
     <p id="connect">
       connect with me on:<br>
@@ -196,8 +139,6 @@ div.slide-up p {
     </p>
 </div>    
     
-    
-
-
+<!--here i close the code-->
 </body>
 </html>
