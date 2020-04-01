@@ -1,107 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" href="https://img.icons8.com/pastel-glyph/2x/fishing-hook.png"><!-- this is the favicon -->
+  <link rel="icon" href="https://img.icons8.com/pastel-glyph/2x/fishing-hook.png" type='image/x-icon'/><!-- this is the favicon -->
   <title>
     <david>
   </title>
-</head>
 	  
-<style> /*this begins the CSS*/
-	
-/*here i define the overall page width*/
-body{
-    width:200px;
-    margin: auto;    
-    font-family: Courier, monospace;
-    font-size: 12px;
-    letter-spacing: 2px;
-/*    font-weight: 700;*/
-}
- 
-	
-/*here i define the righward movement*/
-div.slide-right p {
-  animation: 6s slide-right;
-}
-@keyframes slide-right {
-  from {
-    margin-left: -10000%;
-    width: 100%; 
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-    
-/*here i define the leftward movement*/
-div.slide-left p {
-  animation: 8s slide-left;
-}
-@keyframes slide-left {
-  from {
-    margin-left: 14000%;
-    width: 100%; 
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-	
-/*here i define the upward movement*/
-div.slide-up p {
-  animation: 12s slide-up;
-  margin-top:0%;
-}
-@keyframes slide-up {
-  from {
-    margin-top: 2000%;
-    height: 300%; 
-  }
-  to {
-    margin-top: 0%;
-    height: 100%;
-  }
-}
-    
- /*this section defines the typwriting function at the top*/ 
-.typewriter {
-    font-family: Courier, monospace;
-	display: inline-block;
-}
-.typewriter-text {
-    display: inline-block;
-  	overflow: hidden;
-  	letter-spacing: 2px;
- 	animation: typing 3s steps(13, end), blink 1s step-end infinite;
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: 700;
-    border-right: 4px solid orange;
-    box-sizing: border-box;
-    width:100%;
-    margin: auto;
-}
-@keyframes typing {
-    from { 
-        width: 0% 
-    }
-    to { 
-        width: 100% 
-    }
-}
-@keyframes blink {
-    from, to { 
-        border-color: transparent 
-    }
-    50% { 
-        border-color: orange; 
-    }
-}
-</style>
-	  
+	<style> /*this begins the CSS*/
+
+	/*here i define the overall page width*/
+	body{
+	    width:200px;
+	    margin: auto;    
+	    font-family: Courier, monospace;
+	    font-size: 12px;
+	    letter-spacing: 2px;
+	/*    font-weight: 700;*/
+	}
+
+
+	/*here i define the righward movement*/
+	div.slide-right p {
+	  animation: 6s slide-right;
+	}
+	@keyframes slide-right {
+	  from {
+	    margin-left: -10000%;
+	    width: 100%; 
+	  }
+	  to {
+	    margin-left: 0%;
+	    width: 100%;
+	  }
+	}
+
+	/*here i define the leftward movement*/
+	div.slide-left p {
+	  animation: 8s slide-left;
+	}
+	@keyframes slide-left {
+	  from {
+	    margin-left: 14000%;
+	    width: 100%; 
+	  }
+	  to {
+	    margin-left: 0%;
+	    width: 100%;
+	  }
+	}
+
+	/*here i define the upward movement*/
+	div.slide-up p {
+	  animation: 12s slide-up;
+	  margin-top:0%;
+	}
+	@keyframes slide-up {
+	  from {
+	    margin-top: 2000%;
+	    height: 300%; 
+	  }
+	  to {
+	    margin-top: 0%;
+	    height: 100%;
+	  }
+	}
+
+	 /*this section defines the typwriting function at the top*/ 
+	.typewriter {
+	    font-family: Courier, monospace;
+		display: inline-block;
+	}
+	.typewriter-text {
+	    display: inline-block;
+		overflow: hidden;
+		letter-spacing: 2px;
+		animation: typing 3s steps(13, end), blink 1s step-end infinite;
+	    white-space: nowrap;
+	    font-size: 12px;
+	    font-weight: 700;
+	    border-right: 4px solid orange;
+	    box-sizing: border-box;
+	    width:100%;
+	    margin: auto;
+	}
+	@keyframes typing {
+	    from { 
+		width: 0% 
+	    }
+	    to { 
+		width: 100% 
+	    }
+	}
+	@keyframes blink {
+	    from, to { 
+		border-color: transparent 
+	    }
+	    50% { 
+		border-color: orange; 
+	    }
+	}
+	</style>
+</head>  
 
 <!--here begins the body of the website-->	  
 <body>
